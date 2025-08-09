@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Health Facility & Accessibility - NW Province</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Calibri", sans-serif;
+    }
+
+    #intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: url('background_3.jpg') center center/cover no-repeat;
+      text-align: center;
+      padding: 20px;
+      animation: fadeIn 2s;
+    }
+
+    #intro h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      color: black;
+      text-shadow: 
+        -1px -1px 0 white,  
+         1px -1px 0 white,  
+        -1px  1px 0 white,  
+         1px  1px 0 white;
+      padding: 10px 20px;
+      border-radius: 10px;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+
+    #intro p {
+      font-size: 1.5rem;
+      max-width: 700px;
+      margin-bottom: 2rem;
+      color: #0a2b5d;
+      font-weight: bold;
+      background-color: white;
+      padding: 15px;
+      border-radius: 10px;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+      animation-delay: 2s;
+    }
+
+    #startButton {
+      padding: 12px 24px;
+      background-color: black;
+      color: #18aaaf;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border: 2px solid #18aaaf;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+      animation-delay: 3.5s;
+    }
+
+    #startButton:hover {
+      background-color: #e3f2fd;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="intro">
+    <h1>Health Facility & Accessibility in North Western Province</h1>
+    <p>
+      Health is wealth — but only when it's within reach.<br><br>
+      Explore the health facility distribution, accessibility, and service coverage of healthcare facilities across Kurunegala and Puttalam districts.
+    </p>
+    <!-- Button now links to dashboard.html -->
+    <button id="startButton" onclick="location.href='dashboard.html'">Explore the Map 👉</button>
+  </div>
+</body>
+</html>
+
+
